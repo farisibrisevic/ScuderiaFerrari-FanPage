@@ -13,25 +13,30 @@ body{
     overflow: hidden;
     background: #a6051a;
     color: #ffffff;
-    border-bottom: transparent;
 }
-.logo img{
-    min-height: 80px;
-    width: 100px;
-    box-sizing: border-box;
-}
-.logo h1{
+
+
+.logo p{
     font-size: 30px;
     font-family: 'FerroRosso';
-    text-align: center;
     color: black;
     margin: 0%;
+    display: block;
+    position: absolute;
+    top:10px;
+    left: 30px;
 }
 @font-face {
     font-family: 'FerroRosso';
-    src: local("FeRRoRosso"), url("FerroRosso.ttf") format("truetype");
+    src: local("FerroRosso"), url("FerroRosso.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 
 }
-
+.ferrari{
+    height: 80px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
