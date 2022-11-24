@@ -8,3 +8,4 @@ Header dorađen, slike i tekst poravnati. <i>(20.11.2022., 22:57)</i>
 <br>
 Urađen navbar, napravljeni linkovi i centrirano na sredinu. <i>(20.11.2022., 22:57)</i>
 <br>
+Dodane slike vozača, favicon, i razni drugi efekti <i>(24.11.2022., 23:56)</i>
