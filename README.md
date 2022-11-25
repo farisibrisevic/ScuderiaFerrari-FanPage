@@ -10,4 +10,4 @@ Urađen navbar, napravljeni linkovi i centrirano na sredinu. <i>(20.11.2022., 22
 <br>
 Dodane slike vozača, favicon, i razni drugi efekti <i>(24.11.2022., 23:56)</i>
 <br>
-Dodan slideshow sa slikama, kao i JS skripta za njega. <i>(25.11.2022., 17:52</i>
+Dodan slideshow sa slikama, kao i JS skripta za njega. <i>(25.11.2022., 17:52)</i>
