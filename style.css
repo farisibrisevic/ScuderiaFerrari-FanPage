@@ -26,6 +26,7 @@ body{
     top:20px;
     left: 30px;
 }
+
 @font-face {
     font-family: 'FerroRosso';
     src: local("FerroRosso"), url("FerroRosso.ttf") format("truetype");
@@ -33,10 +34,12 @@ body{
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'Formula1-Regular';
     src: local("Formula1-Regular"), url("Formula1-Regular.otf") format("truetype");
 }
+
 .ferrari{
     height: 80px;
     width: 100px;
@@ -45,12 +48,14 @@ body{
     margin-right: auto;
     margin-bottom: 10px;
 }
+
 .ferrari:hover{
     opacity: 0.7;
     scale: 1.2;
     cursor: pointer;
     transition: 0.2s;
 }
+
 .social{
     list-style-type: none;
     margin: 0;
@@ -61,6 +66,7 @@ body{
     right: 30px;
     text-decoration: none;
 }
+
 .li1{
     display: inline-block;
 }
@@ -70,6 +76,7 @@ body{
     float: right;
     color: black;
   }
+
 .fa:hover{
     color: #d94659;
     scale: 1.5;
@@ -88,12 +95,14 @@ body{
     width: 100%;
     text-align: center;
 }
+
 .li2{
     display: inline;
     font-family: 'Formula1-Regular';
     font-size: 20px;
 
 }
+
 .li2 a{
     display: inline-block;
     color: black;
@@ -101,21 +110,25 @@ body{
     text-decoration: none;
     margin-left: 10px;
 }
+
 .li2 a:hover{
     scale: 1.3;
     color: #ffffff;
     transition: 0.20s;
 }
+
 #current{
     color: white;
 }
+
 .showcase{
     background-image: url("volan.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
-    background-position: 60% 60%;
+    height: 535px;
+    background-position: 50% 50%;
 }
+
 .showcase h1{
     margin: 0;
     color: #ffffff;
@@ -123,6 +136,7 @@ body{
     font-family: 'Formula1-Regular';
     font-size: 50px;
     margin-bottom: 35px;
+    text-shadow: black 0.1em 0.1em 0.2em;
 
 }
 .showcase p{
@@ -164,6 +178,61 @@ body{
     color: white;
     font-size: 25px;
 }
+.bolid{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.bolid img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    float: right;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    border-left: #fbce11 1px solid;
+    border-bottom: #fbce11 1px solid;
+    border-bottom-left-radius: 40px;
+}
+.sezona{
+    background-color: #a6051a;
+    color: white;
+    text-align: left;
+    font-family: 'Formula1-Regular';
+    font-size: 30px;
+    padding: 20px;
+}
+.sezona h1{
+    margin-left: 20px;
+    border-bottom: #111111 1.5px solid;
+    border-right: #111111 1.5px solid;
+    border-bottom-right-radius: 40px;
+
+}
+.pregled{
+    background-color: #a6051a;
+    color: white;
+    text-align: left;
+    font-family: 'Formula1-Regular';
+    width: 640px;
+    height: 100px;
+}
+.sezona p{
+    line-height: 0.8em;
+    font-size: 20px;
+    font-family: 'Formula1-Regular';
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#wdc{
+    padding-top: 25px;
+}
+
 .vozaci{
     background-color: #a6051a;
     color: white;
@@ -173,6 +242,9 @@ body{
     padding-left: 0px;
     padding-right: 0px;
     font-family: 'Formula1-Regular';
+}
+#tim{
+    border-top: 3px white solid;
 }
 .vozaci p{
     margin-top: 5px;
@@ -349,14 +421,6 @@ footer a:hover{
     color: black;
     size: 15px;
 }
-
-
-
-
-
-
-
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -431,10 +495,11 @@ footer a:hover{
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #a6051a;
 }
 
 /* Fading animation */
