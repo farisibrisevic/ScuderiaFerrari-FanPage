@@ -566,3 +566,50 @@ th{
     margin-left: 20px;
     padding-bottom: 15px;
 }
+#ferrari{
+    border-right: #111111 2px solid;
+    border-bottom: #111111 2px solid;
+    border-bottom-right-radius: 20px;
+}
+#p1{
+    border-right: #a6051a 5px solid;
+    border-top: #a6051a 5px solid;
+    border-top-right-radius: 20px;
+}
+.biografija{
+    background-color: rgb(211, 208, 208);
+}
+.biografija h2{
+    margin: 0;
+    font-family: 'Formula1-Regular';
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #a6051a;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+.biografija p{
+    margin: 0;
+    font-family: 'Formula1-Regular';
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+}
+#zadnji{
+    padding-bottom: 15px;
+}
+.sljedeća{
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: 'Formula1-Regular';
+}
+.sljedeća a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
