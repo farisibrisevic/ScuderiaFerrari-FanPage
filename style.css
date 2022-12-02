@@ -321,13 +321,14 @@ body{
     transition: 0.20s;
 }
 .sponzori{
-    background-color: white;
+    background-color: rgb(211, 208, 208);
     color: black;
     text-align: center;
     padding: 20px;
     padding-left: 0px;
     padding-right: 0px;
     font-family: 'Formula1-Regular';
+    border-top:2px black solid; 
 }
 .sponzori img{
     width: 10%;
@@ -369,7 +370,7 @@ body{
     opacity: 0.5;
 }
 .sponzori2{
-    background-color: white;
+    background-color: rgb(211, 208, 208);
     color: black;
     text-align: center;
     padding: 20px;
@@ -511,4 +512,57 @@ footer a:hover{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+.naslov{
+    height: 100px;
+    width: 100%;
+    background-color: #a6051a;
+    border-top: 2px solid #111111  ;
+}
+.naslov h2{
+    font-family: 'Formula1-Regular';
+    font-size: 30px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+
+}
+.profil{
+    float: left;
+}
+.kaciga{
+    width: 400px;
+    height: 300px;
+    margin-left: 0;
+}
+table{
+    font-family: 'Formula1-Regular';
+    font-size: 20px;
+    color: #a6051a;
+}
+th,td{
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+th{
+    color: black;
+    text-align: left;
+}
+.monako{
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.statistika{
+    background-color: rgb(211, 208, 208);
+}
+#broj{
+    font-size: 50px;
+    color: #a6051a;
+    font-family: 'Formula1-Regular';
+    margin-left: 20px;
+    padding-bottom: 15px;
 }
