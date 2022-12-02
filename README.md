@@ -13,3 +13,5 @@ Dodane slike vozača, favicon, i razni drugi efekti <i>(24.11.2022., 23:56)</i>
 Dodan slideshow sa slikama, kao i JS skripta za njega. <i>(25.11.2022., 17:52)</i>
 <br>
 Napokon napravljena nova stranica sa profilima vozača, nakon detaljno pregledane početne stranice. Naravno, naći ću da nešto fali u međuvremenu. <i>(02.12.2022., 01.25)</i>
+<br>
+Leclerc završen, treba napraviti za Sainza. Probati podesiti dugmad za navigaciju između profila dva vozača (opcionalno) <i>(02.12.2022., 02.46)</i>
