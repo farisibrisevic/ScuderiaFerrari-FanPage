@@ -17,3 +17,5 @@ Napokon napravljena nova stranica sa profilima vozača, nakon detaljno pregledan
 Leclerc završen, treba napraviti za Sainza. Probati podesiti dugmad za navigaciju između profila dva vozača (opcionalno) <i>(02.12.2022., 02.46)</i>
 <br>
 Boga pitaj dokle sam stigao, mislim da sam dodao sve. Počinjem se gubiti u svemu... <i>(03.12.2022., 01.08)</i>
+<br>
+Sitne promjene i rješavanje bug-ova na ne tako efektivan način <i>(03.12.2022., 01.26)</i>
