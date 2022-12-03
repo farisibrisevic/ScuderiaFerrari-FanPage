@@ -800,3 +800,122 @@ th{
 .spec1 p{
     margin: 0;
 }
+#main{
+    float: left;
+    width:70%;
+    padding: 0 30px;
+    padding-right: 0;
+    box-sizing: border-box;
+    background-color: #a6051a;
+    color: white;
+    border-top: #111111 2px solid;
+}
+#main h2{
+    font-family: 'Formula1-Regular';
+    font-size: 30px;
+    color: #111111;
+    text-align: center;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+    margin-left: 200px;
+}
+#sidebar{
+    float:right;
+    width:30%;
+    background-color: #a6051a;
+    color: white;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    border-top: #111111 2px solid;
+}
+#sidebar h3{
+    font-family: 'Formula1-Regular';
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+    border-left: #fbce11 5px solid;
+    border-bottom: #fbce11 5px solid;
+    border-bottom-left-radius: 20px;
+}
+#stats{
+    background-color: #0d8922;
+    font-family: 'Formula1-Regular';
+    color: #111111;
+    padding: 0;
+    text-align: center;
+    justify-content: left;
+    float: left;
+    margin-top: 1px;
+}
+#stats h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#tabela{
+    background-color: #a6051a;
+    font-family: 'Formula1-Regular';
+    color: white;
+    padding: 0;
+    text-align: left;
+    justify-content: left;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: #0d8922 4px solid;
+    border-bottom: #0d8922 4px solid;
+}
+#konstruktor{
+    border-bottom: #0d8922 2px solid;
+}
+#wdc{
+    border-bottom: #0d8922 2px solid;
+}
+
+.historija{
+    width:70%;
+    padding: 0 30px;
+    text-align: justify;
+    text-justify: newspaper;
+}
+.historija p{
+    margin: 0;
+    font-family: 'Formula1-Regular';
+    line-height: 2.0em;
+    color: lavenderblush;
+}
+.container h2{
+    text-align: center;
+    margin: 0;
+    font-family: 'Formula1-Regular';
+    color: #ffffff;
+}
+.sampioni ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+}
+.sampioni li{
+    font-family: 'Formula1-Regular';
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+.sefovi ul{
+    list-style: none;
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+}
+.sefovi li{
+    font-family: 'Formula1-Regular';
+    color: #ffffff;
+    padding-bottom: 10px;
+}
