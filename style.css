@@ -7,38 +7,26 @@ body{
     box-sizing: border-box;
     margin: 0;
 }
-#glavna a{
-    color: black;
-    text-decoration: none;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6F0100;
 }
-#glavna a:hover{
-    text-decoration: underline #fbce11;
-    cursor: pointer;
-    opacity: 0.8;
-}
-#glavna:hover{
-    opacity: 0.8;
-    scale: 1.2;
-    transition: 0.5s;
-}
-
 .logo{
     width: 100%;
     overflow: hidden;
-    background: #a6051a;
+    background: #6F0100;
     color: #ffffff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
-
-
 .logo p{
     font-size: 30px;
     font-family: 'FerroRosso';
     color: black;
     margin: 0%;
-    display: block;
-    position: absolute;
-    top:20px;
-    left: 30px;
 }
 
 @font-face {
@@ -56,10 +44,6 @@ body{
 .ferrari{
     height: 80px;
     width: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
 }
 
 .ferrari:hover{
@@ -68,55 +52,25 @@ body{
     cursor: pointer;
     transition: 0.2s;
 }
-
-.social{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: block;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    text-decoration: none;
-}
-
-.li1{
-    display: inline-block;
-}
-
-.fa {
-	width: 25px;
-    float: right;
-    color: black;
-  }
-
-.fa:hover{
-    color: #d94659;
-    scale: 1.5;
-    transition: 0.20s;
-}
-
 .lista1{
-    border-top: 2px solid black;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #a6051a;
-    position: relative;
-    top: 0;
+    background-color: #6F0100;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.li2{
+.li1{
     display: inline;
     font-family: 'Formula1-Regular';
-    font-size: 20px;
-
+    font-size: 30px;
 }
 
-.li2 a{
+.li1 a{
     display: inline-block;
     color: black;
     padding: 14px 16px;
@@ -124,7 +78,7 @@ body{
     margin-left: 10px;
 }
 
-.li2 a:hover{
+.li1 a:hover{
     scale: 1.3;
     color: #ffffff;
     transition: 0.20s;
@@ -139,7 +93,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 535px;
-    background-position: 50% 50%;
+    background-position: 70% 90%;
 }
 
 .showcase h1{
@@ -175,12 +129,12 @@ body{
     margin-left: 20px;
 }
 .showcase button:hover{
-    color: #a6051a;
+    color: #6F0100;
     scale: 1.3;
     transition: 0.20s;
 }
 .showcase a:hover{
-    color: #a6051a;
+    color: #6F0100;
     scale: 1.3;
     transition: 0.20s;
 }
@@ -216,29 +170,28 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #a6051a;
+    background-color: #6F0100;
 }
 aside{
     width: 100%;
     height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #a6051a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6F0100;
 }
 aside img{
     width: 50%;
-    margin-bottom: 10px;
     border-bottom: #fbce11 1px solid;
     border-right: #fbce11 1px solid;
+    border-left: #fbce11 1px solid;
+    border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-}
-#p5{
-    margin: 0;
 }
 .sezona{
     width: 100%;
-    background-color: #a6051a;
+    background-color: #6F0100;
     color: white;
     text-align: center;
     font-family: 'Formula1-Regular';
@@ -248,20 +201,13 @@ aside img{
 .sezona h4{
     margin: 0;
 }
-.sezona h2{
-    margin-left: 20px;
-    border-top: #111111 5px solid;
-    border-right: #111111 5px solid;
-    border-top-right-radius: 40px;
-
-}
 .pregled{
-    background-color: #a6051a;
+    background-color: #6F0100;
     color: white;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Formula1-Regular';
-    width: 640px;
-    height: 100px;
 }
 .sezona p{
     line-height: 0.8em;
@@ -271,19 +217,18 @@ aside img{
     margin-left: 20px;
     margin-right: 20px;
 }
-#wdc{
-    padding-top: 25px;
-}
-
 .vozaci{
-    background-color: #a6051a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6F0100;
     color: white;
-    text-align: center;
     padding: 20px;
     padding-bottom: 0;
     padding-left: 0px;
     padding-right: 0px;
     font-family: 'Formula1-Regular';
+    height: 50rem;
 }
 #tim{
     border-top: 3px white solid;
@@ -293,41 +238,40 @@ aside img{
     font-size: 40px;
 }
 .vozac1{
-    background-image: url("cl2.jpeg");
+    background-image: url("leclerc-naslovna.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
-    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 .vozac1 p{
     margin:0;
     padding: 2px;
     font-size: 30px;
-    position: absolute;
-    top: 0px;
-    left: 40%;
     text-shadow: black 5px 5px 5px;
     color: white;
 }
-.vozac1 #driver{
-    position: absolute;
-    top: 60px;
-}
+
 .vozac2{
     margin-top: 10px;
-    background-image: url("cs2.jpeg");
+    background-image: url("sainz-naslovna.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
-    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 .vozac2 p{
     margin:0;
     padding: 2px;
     font-size: 30px;
-    position: absolute;
-    top: 0px;
-    left: 40%;
     text-shadow: black 5px 5px 5px;
     color: white;
 }
@@ -335,14 +279,6 @@ aside img{
     scale: 1.3;
     transition: 0.20s;
     color:#fbce11 ;
-}
-.vozac2 #driver{
-    position: absolute;
-    top: 60px;
-}
-.vozac2 #name{
-    position: absolute;
-    left:41%;
 }
 .vozac2 a{
     text-decoration: none;
@@ -471,7 +407,7 @@ aside img{
     opacity: 0.5;
 }
 footer{
-    background-color: #a6051a;
+    background-color: #6F0100;
     color: white;
     text-align: center;
     padding: 20px;
@@ -501,7 +437,7 @@ footer a:hover{
 .wrapper{
     display: flex;
     position: relative;
-    background-color: #a6051a;
+    background-color: #6F0100;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -561,7 +497,7 @@ footer a:hover{
 .naslov{
     height: 100px;
     width: 100%;
-    background-color: #a6051a;
+    background-color: #6F0100;
     border-top: 2px solid #111111  ;
 }
 .naslov h2{
@@ -616,7 +552,7 @@ table{
     justify-content: center;
     font-family: 'Formula1-Regular';
     font-size: 15px;
-    color: #a6051a;
+    color: #6F0100;
 }
 th,td{
     padding-right: 15px;
@@ -638,7 +574,7 @@ th{
 }
 #broj{
     font-size: 50px;
-    color: #a6051a;
+    color: #6F0100;
     font-family: 'Formula1-Regular';
 }
 #ferrari{
@@ -647,8 +583,8 @@ th{
     border-bottom-right-radius: 20px;
 }
 #p1{
-    border-right: #a6051a 5px solid;
-    border-top: #a6051a 5px solid;
+    border-right: #6F0100 5px solid;
+    border-top: #6F0100 5px solid;
     border-top-right-radius: 20px;
 }
 .biografija{
@@ -659,7 +595,7 @@ th{
     font-family: 'Formula1-Regular';
     padding-left: 40px;
     padding-right: 40px;
-    color: #a6051a;
+    color: #6F0100;
     text-align: center;
     font-size: 40px;
     font-style: italic;
@@ -705,7 +641,7 @@ th{
 }
 .f175{
     width: 100%;
-    background-color: #a6051a;
+    background-color: #6F0100;
 }
 .f175 h2{
     font-family: 'Formula1-Regular';
@@ -755,7 +691,7 @@ th{
     width: 100%;
     height: 500px;
     margin-top: 0;
-    background-color: #a6051a;
+    background-color: #6F0100;
 
 }
 .bolid h1{
@@ -789,7 +725,7 @@ th{
 }
 .spec1 h2{
     font-size: 30px;
-    color: #a6051a;
+    color: #6F0100;
     margin: 0;
 }
 .spec1 p{
@@ -801,7 +737,7 @@ th{
     padding: 0 30px;
     padding-right: 0;
     box-sizing: border-box;
-    background-color: #a6051a;
+    background-color: #6F0100;
     color: white;
     border-top: #111111 2px solid;
 }
@@ -819,7 +755,7 @@ th{
 #sidebar{
     float:right;
     width:30%;
-    background-color: #a6051a;
+    background-color: #6F0100;
     color: white;
     padding: 10px;
     padding-left: 0;
@@ -855,7 +791,7 @@ th{
     margin-bottom: 0;
 }
 #tabela{
-    background-color: #a6051a;
+    background-color: #6F0100;
     font-family: 'Formula1-Regular';
     color: white;
     padding: 0;
@@ -870,10 +806,6 @@ th{
 #konstruktor{
     border-bottom: #0d8922 2px solid;
 }
-#wdc{
-    border-bottom: #0d8922 2px solid;
-}
-
 .historija{
     width:70%;
     padding: 0 30px;
