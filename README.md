@@ -26,3 +26,5 @@ Mislim da je sve napokon (barem za PC) gotovo. Sve stranice dodane i radi (valjd
 Eto od onda, tek sad. Dakle 02.03.2024., urađen update Leclercove stranice, promijenjen layout kacige, tabele, broja i zastave. Update je u smislu podataka: pobjede, podijumi, ukupno startova...
 <br>
 Optimizovan HTML i CSS, korišten flexbox za poravnanje. 
+
+21:53 - Dodane nove slike u galeriju, dorađen index.html i njegov dizajn. CSS ima manje linija, i dalje se radi na optimizaciji
