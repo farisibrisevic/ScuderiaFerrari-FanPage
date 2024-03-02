@@ -21,3 +21,8 @@ Boga pitaj dokle sam stigao, mislim da sam dodao sve. Počinjem se gubiti u svem
 Sitne promjene i rješavanje bug-ova na ne tako efektivan način <i>(03.12.2022., 01.26)</i>
 <br>
 Mislim da je sve napokon (barem za PC) gotovo. Sve stranice dodane i radi (valjda) <i>(03.12.2022., 14.51)</i>
+<br>
+<hr>
+Eto od onda, tek sad. Dakle 02.03.2024., urađen update Leclercove stranice, promijenjen layout kacige, tabele, broja i zastave. Update je u smislu podataka: pobjede, podijumi, ukupno startova...
+<br>
+Optimizovan HTML i CSS, korišten flexbox za poravnanje. 
