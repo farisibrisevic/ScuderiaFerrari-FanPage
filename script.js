@@ -82,15 +82,24 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
 
-window.onscroll = function() {stickyFunction()};
+window.onscroll = function() {
+  stickyFunction("MyHeader");
+  stickyFunction("naslov");
+};
 
-var header = document.getElementById("MyHeader");
-var sticky = header.offsetTop;
+var header1 = document.getElementById("MyHeader");
+var sticky1 = header1.offsetTop;
 
-function stickyFunction() {
+var header2 = document.getElementById("naslov");
+var sticky2 = header2.offsetTop;
+
+function stickyFunction(id) {
+  var header = document.getElementById(id);
+  var sticky = header.offsetTop;
+
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+      header.classList.add("sticky");
   } else {
-    header.classList.remove("sticky");
+      header.classList.remove("sticky");
   }
 }
