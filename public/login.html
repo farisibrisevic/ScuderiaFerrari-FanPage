@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <h2>Login</h2>
+  
+  <!-- Display login error message -->
+  <div id="loginErrorMessage" style="color: red;"></div>
+
+  <form action="/login" method="post">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+
+  <h2>Register</h2>
+  
+  <!-- Display registration error message -->
+  <div id="registerErrorMessage" style="color: red;"></div>
+
+  <form action="/register" method="post">
+    <div>
+      <label for="regUsername">Username:</label>
+      <input type="text" id="regUsername" name="regUsername" required>
+    </div>
+    <div>
+      <label for="regPassword">Password:</label>
+      <input type="password" id="regPassword" name="regPassword" required>
+    </div>
+    <div>
+      <button type="submit">Register</button>
+    </div>
+  </form>
+
+  <script>
+    // JavaScript to display error messages
+    const urlParams = new URLSearchParams(window.location.search);
+    const loginErrorMessage = urlParams.get('loginError');
+    const registerErrorMessage = urlParams.get('registerError');
+
+    if (loginErrorMessage) {
+      document.getElementById('loginErrorMessage').innerText = loginErrorMessage;
+    }
+
+    if (registerErrorMessage) {
+      document.getElementById('registerErrorMessage').innerText = registerErrorMessage;
+    }
+  </script>
+</body>
+</html>
