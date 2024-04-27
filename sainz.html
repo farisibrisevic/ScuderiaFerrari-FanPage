@@ -10,109 +10,113 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header id="MyHeader">
+        <ul class="lista1" id="pocetak">
+            <li class="li1"><a href="index.html">Početna</a></li>
+            <li class="li1"><a href="leclerc.html" id="current">Vozači</a></li>
+            <li class="li1"><a href="bolidi.html">Bolidi</a></li>
+            <li class="li1"><a href="historija.html">Historija</a></li>
+        </ul>
         <div class="logo">
-           <a href="index.html"> <img src="ferrari.png" class="ferrari"></a>
-            <p>Scuderia Ferrari</p><!--Pitati profesora kako poravnati tekst sa slikom po visini, a usput i vidjeti kako staviti sliku na centar!-->
-                <ul class="social">
-                    <li class="li1"><a href="https://www.facebook.com/ScuderiaFerrari/"><i class="fa fa-facebook"></i></a></li>
-                    <li class="li1"><a href="https://twitter.com/ScuderiaFerrari"><i class="fa fa-twitter"></i></a></li>
-                    <li class="li1"><a href="https://www.instagram.com/scuderiaferrari/"><i class="fa fa-instagram"></i></a></li>
-                </ul>
+                <a href="index.html"> <img src="ferrari.svg" class="ferrari"></a>
         </div>
     </header>
-<ul class="lista1">
-    <li class="li2"><a href="index.html">Početna</a></li>
-    <li class="li2"><a href="leclerc.html"  id="current">Vozači</a></li>
-    <li class="li2"><a href="bolidi.html">Bolidi</a></li>
-    <li class="li2"><a href="historija.html">Historija</a></li>
-</ul>
-<div class="naslov">
-<h2><button class="prethodna"><a href="leclerc.html"><</a> </button>Carlos Sainz</h2>
+<div class="naslov" id="naslov">
+<h2><button class="sljedeća"><a href="leclerc.html"><</a></button>Carlos Sainz</h2>
 </div>
-<div class="profil">
-<img src="cs-original.jpg" class="sainz">
+
+<div class="info">
+    <div class="leclerc">
+        <img src="cs.png" alt="Carlos Sainz" id="leclerc">
+    </div>
+
+    <div class="grafika">
+        <div class="kaciga">
+            <img src="cs-kaciga.png" id="cl-kaciga">
+            <img src="spanija.jpg" id="monako">
+            <span id="leclerc-16">55</span>
+        </div>
+    </div>
+    <div class="statistika">
+        <br>
+        <table>
+            <tr>
+                <td>Tim</td>
+                <th id="ferrari">Ferrari</th>
+            </tr>
+            <tr>
+                <td>Zemlja rođenja</td>
+                <th>Španija</th>
+            </tr>
+            <tr>
+                <td>Podijumi</td>
+                <th>21</th>
+            </tr>
+            <tr>
+                <td>Bodovi</td>
+                <th>1150.5</th>
+              </tr>
+            <tr>
+                <td>Ukupno GP </td>
+                <th>189</th>
+             </tr>
+             <tr>
+                <td>WC</td>
+                <th>N/A</th>
+             </tr>
+             <tr>
+                <td id="p1">Najviša završna pozicija</td>
+                <th>1 (x3)</th>
+             </tr>
+             <tr>
+                <td>Najviša pozicija na gridu</td>
+                <th>1</th>
+             </tr>
+             <tr>
+                <td>Datum rođenja</td>
+                <th>1/09/1994</th>
+             </tr>
+             <tr>
+                <td>Mjesto rođenja</td>
+                <th>Madrid, Španija</th>
+             </tr>
+          </table>
+    
+    </div>
+
 </div>
-<div class="statistika">
-    <img src="cs-kaciga.png" class="kaciga_sainz">
-    <br>
-    <table>
-        <tr>
-            <td>Tim</td>
-            <th id="ferrari">Ferrari</th>
-        </tr>
-        <tr>
-            <td>Zemlja rođenja</td>
-            <th>Španija</th>
-        </tr>
-        <tr>
-            <td>Podijumi</td>
-            <th>15</th>
-        </tr>
-        <tr>
-            <td>Bodovi</td>
-            <th>782.5</th>
-          </tr>
-        <tr>
-            <td>Ukupno GP </td>
-            <th>163</th>
-         </tr>
-         <tr>
-            <td>WC</td>
-            <th>N/A</th>
-         </tr>
-         <tr>
-            <td id="p1">Najviša završna pozicija</td>
-            <th>1 (x1)</th>
-         </tr>
-         <tr>
-            <td>Najviša pozicija na gridu</td>
-            <th>1</th>
-         </tr>
-         <tr>
-            <td>Datum rođenja</td>
-            <th>01/09/1994</th>
-         </tr>
-         <tr>
-            <td>Mjesto rođenja</td>
-            <th>Madrid, Španija</th>
-         </tr>
-      </table>
-      <span id="broj">55</span>
-      <img src="spanija.jpg" class="spanija">
-</div>
+
+
 <div class="biografija">
 <h2>Biografija</h2>
 <br>
-<p>On je matador iz madridske trkačke kraljevske porodice.</p>
+<p>Carlos Sainz je matador iz madridske kraljevske trkačke porodice</p>
 <br>
-<p>Nakon što je 2015. godine ušao u F1 u paru sa Maxom Verstappenom u Toro Rossu, Sainz je brzo pokazao svoj borbeni duh. Uporan trkač, on vuče svoj automobil na ivicu dok se probija kroz čopor. Nije ni čudo što je Sainz zaradio nadimak Chilli.</p>
+<p>Nakon što je 2015. godine ušao u F1 Red Bull Ring u paru sa Maxom Verstappenom u Toro Rosso-u (sadašnji Visa CashApp RB), Sainz je brzo pokazao svoj borbeni duh. Uporan trkač, vozi do same ivice probijajući se kroz čopor. Nije ni čudo što je zaradio nadimak Chilli</p>
 <br>
-<p>Ali Španac je inteligentan i instinktivan, razmišlja o svom putu kroz trku do bodova. Ovaj mirni temperament ga prati izvan kolosijeka gdje ostaje neometan pritiscima stvaranja Grand Prix karijere sa poznatim imenom.</p>
+<p>Španac je veoma inteligentan i instinktivan. Razmišlja o svom putu kroz trku do bodova, pa čak i u najužarenijim trenucima. Njegov miran temperament ga prati i izvan kolosijeka gdje ostaje neometan pritiscima stvaranjima Grand Prix karijere sa poznatim imenom</p>
 <br>
-<p>Sainz je sin dvostrukog svjetskog prvaka u reliju, također njegovog imenjaka, i donio je neke od tatinih vozačkih vještina na stazu F1 - junior voli ukusnu dozu drifta.</p>
+<p>Carlos je sin dvostrukog svjetskog prvaka u reliju, također njegovog imenjaka i donio je neke od očevih vještina na stazu F1 - voli ukusnu, ali zdravu dozu drifta. Carlos je imao velik zadatak - pratiti svog oca sa jednakim uspjesima. Prvo je u McLarenu zamijenio svog junaka iz djetinjstva Fernanda Alonsa, a sada je u Ferrariju na mjestu koje je posjedovao Sebastian Vettel. </p>
 <br>
-<p>Nakon što je pratio tragove guma svog slavnog oca, Sainz je morao popuniti velike trkačke čizme – prvo u McLarenu gdje je zamijenio svog heroja iz djetinjstva Fernanda Alonsa, a sada u Ferrariju, na sjedištu koje je ranije bio u vlasništvu Sebastiana Vettela.</p>
+<p>Sigurno nije lahko živjeti u sjeni sportskih giganata, ali je Sainz pokazao volju i raspoloženje da se nosi s tim. Postigao je tri pobjede u Scuderiji do sad, sa sigurno još pobjeda sa Scuderijom ali i bez nje. Vamos!</p>
 <br>
-    <p id="zadnji">Nikada nije lako živjeti u sjeni sportskih giganata, ali Sainz je pokazao volju i raspoloženje da se nosi s tim, te je 2022. odnio svoju prvu pobjedu u F1 pobjedom u Silverstoneu. Vamos!</p>
-
 </div>
 
+<div class="sponzori">
+    <h2>Naši sponzori</h2>
+        <a href="https://www.shell.com/"><img src="/sponzori/shell.png" id="shell"></a>
+        <a href="https://www.bitdefender.com/"><img src="/sponzori/bitdefender.png" id="defender"></a>
+        <a href="https://www.santander.com/en/home"><img src="/sponzori/santander.png" id="santander"></a>
+        <a href="https://www.puma.com/"><img src="/sponzori/puma.png" id="puma"></a>
+</div>
 
-    <div class="sponzori">
-        <h2>Naši sponzori</h2>
-            <a href="https://www.shell.com/"><img src="/sponzori/shell.png" id="shell"></a>
-            <a href="https://www.bitdefender.com/"><img src="/sponzori/bitdefender.png" id="defender"></a>
-            <a href="https://www.santander.com/en/home"><img src="/sponzori/santander.png" id="santander"></a>
-            <a href="https://velas.com/en"><img src="/sponzori/velas.png" id="velas"></a>
-            <a href="https://www.qualcomm.com/snapdragon"><img src="/sponzori/snapdragon.png"  id="snapdragon"></a>
-    </div>
-    
-    <div class="sponzori2">
-        <a href="https://bellracing.eu/"><img src="/sponzori/bell.png" id="bell"></a>
-        <a href="https://www.pirelli.com/"><img src="/sponzori/pirelli.png" id="pirelli"></a>
-    
-    </div>
+<div class="sponzori2">
+    <a href="https://bellracing.eu/"><img src="/sponzori/bell.png" id="bell"></a>
+    <a href="https://www.pirelli.com/"><img src="/sponzori/pirelli.png" id="pirelli"></a>
+    <a href="https://www.hcl-software.com/"><img src="/sponzori/hcl.png" id="hcl"></a>
+    <a href="https://aws.amazon.com/"><img src="/sponzori/aws.svg" id="aws"></a>
+
+</div>
     
     <footer>
         <p>Made with <span id="srce">&hearts;</span> by <a href="https://www.github.com/farisibrisevic/">Faris</a></p>

@@ -7,6 +7,9 @@ body{
     box-sizing: border-box;
     margin: 0;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 header{
     position: sticky;
     top: 0;
@@ -24,6 +27,7 @@ header{
     display: flex;
     justify-content: end;
     align-items: center;
+    padding: 10px;
 }
 .logo p{
     font-size: 30px;
@@ -45,8 +49,8 @@ header{
     src: local("Formula1-Regular"), url("Formula1-Regular.otf") format("truetype");
 }
 .ferrari{
-    height: 80px;
-    width: 100px;
+    height: 100px;
+    width: 120px;
 }
 
 .ferrari:hover{
@@ -477,7 +481,7 @@ footer a:hover{
     height: 100px;
     width: 100%;
     background-color: #6F0100;
-    border: 2px solid #111111;
+    border-top: 2px solid #111111;
 }
 .naslov h2{
     font-family: 'Formula1-Regular';
