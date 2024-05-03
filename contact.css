@@ -1,0 +1,167 @@
+body{
+    background-color: #ccc;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    box-sizing: border-box;
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6F0100;
+}
+.logo{
+    width: 100%;
+    overflow: hidden;
+    background: #6F0100;
+    color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo p{
+    font-size: 30px;
+    font-family: 'FerroRosso';
+    color: black;
+    margin: 0%;
+}
+
+@font-face {
+    font-family: 'FerroRosso';
+    src: local("FerroRosso"), url("FerroRosso.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Formula1-Regular';
+    src: local("Formula1-Regular"), url("Formula1-Regular.otf") format("truetype");
+}
+.ferrari{
+    height: 100px;
+    width: 120px;
+}
+
+.ferrari:hover{
+    opacity: 0.7;
+    scale: 1.2;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #6F0100; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f2f2f2;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Formula1-Regular';
+  }
+  
+.sidenav a:hover {
+    color: #fbce11;
+    scale: 1.3;
+  }
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+.sidenav .closebtn:hover{
+    color: #fbce11;
+    scale: 1.3;
+}
+.lista1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6F0100;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.li1{
+    display: inline;
+    font-family: 'Formula1-Regular';
+    font-size: 30px;
+}
+
+.li1 a{
+    display: inline-block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.li1 a:hover{
+    scale: 1.3;
+    color: #ffffff;
+    transition: 0.20s;
+}
+.naslov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Formula1-Regular';
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Formula1-Regular';
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Formula1-Regular';
+}
+
+button {
+    background-color: #6F0100;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Formula1-Regular';
+}

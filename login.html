@@ -2,37 +2,52 @@
 <html>
 <head>
   <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h2>Login</h2>
-  
-  <!-- Display login error message -->
-  <div id="loginErrorMessage" style="color: red;"></div>
 
-  <form action="/login" method="post">
-    <div>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
+  <header>
+    <div class="logo">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="login.html">Prijava</a>
+            <a href="about.html">O nama</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+        <span onclick="openNav()"><img src="ferrari.svg" class="ferrari"></a></span>
     </div>
-    <div>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-    <div>
-      <button type="submit">Login</button>
-    </div>
-  </form>
-
+        <ul class="lista1">
+            <li class="li1"><a href="index.html">Početna</a></li>
+            <li class="li1"><a href="leclerc.html">Vozači</a></li>
+            <li class="li1"><a href="bolidi.html">Bolidi</a></li>
+            <li class="li1"><a href="historija.html">Historija</a></li>
+        </ul>
+    </header>
+  <div class="container">
+    <div class="login">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+  <div class="register">
   <h2>Register</h2>
-  
-  <!-- Display registration error message -->
-  <div id="registerErrorMessage" style="color: red;"></div>
-
-  <form action="/register" method="post">
-    <div>
-      <label for="regUsername">Username:</label>
-      <input type="text" id="regUsername" name="regUsername" required>
-    </div>
+    <form action="/register" method="post">
+      <div>
+        <label for="regUsername">Username:</label>
+        <input type="text" id="regUsername" name="regUsername" required>
+      </div>
     <div>
       <label for="regPassword">Password:</label>
       <input type="password" id="regPassword" name="regPassword" required>
@@ -40,8 +55,9 @@
     <div>
       <button type="submit">Register</button>
     </div>
-  </form>
-
+    </form>
+  </div>
+</div>
   <script>
     // JavaScript to display error messages
     const urlParams = new URLSearchParams(window.location.search);
@@ -50,12 +66,12 @@
 
     if (loginErrorMessage) {
       document.getElementById('loginErrorMessage').innerText = loginErrorMessage;
-      console.log('loginErrorMessage:', loginErrorMessage);
+      alert(loginErrorMessage);
     }
 
     if (registerErrorMessage) {
       document.getElementById('registerErrorMessage').innerText = registerErrorMessage;
-      console.log('registerErrorMessage:', registerErrorMessage);
+      alert(registerErrorMessage);
     }
   </script>
 </body>

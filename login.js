@@ -10,13 +10,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const directoryPath = __dirname;
 const usersFilePath = path.join(directoryPath, 'users.json');
+const contactsFilePath = path.join(directoryPath, 'contacts.json'); // New file for storing contact data
 
 app.use(express.static(directoryPath));
 
-// Initialize users array
 let users = [];
-
-// Read users data from JSON file
 try {
   const userData = fs.readFileSync(usersFilePath, 'utf8');
   users = JSON.parse(userData).users;
@@ -31,40 +29,59 @@ app.get('/', (req, res) => {
 
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
-
-  // Find user in the users array
   const user = users.find(u => u.username === username && u.password === password);
-
   if (user) {
-    // Redirect to index.html upon successful login
     res.redirect('/index.html');
   } else {
-    // Render login page with login error message
+    console.log('Invalid username or password');
     res.sendFile(path.join(directoryPath, 'login.html'), { loginError: 'Invalid username or password.' });
   }
 });
 
-
 app.post('/register', (req, res) => {
   const { regUsername, regPassword } = req.body;
-
-  // Check if the username already exists
   const existingUser = users.find(u => u.username === regUsername);
-
   if (existingUser) {
-    // Render login page with registration error message
+    console.log('Username already exists. Please choose a different username.');
     return res.sendFile(path.join(directoryPath, 'login.html'), { registerError: 'Username already exists. Please choose a different username.' });
   } else {
-    // Add new user to the users array
     users.push({ username: regUsername, password: regPassword });
-
-    // Update the users.json file with the new user data
     fs.writeFileSync(usersFilePath, JSON.stringify({ users }, null, 2));
-
-    res.send('Registration successful!');
+    res.redirect('/index.html');
   }
 });
 
+// Route to handle contact form submission
+app.post('/submit', (req, res) => {
+  const { name, email, message } = req.body;
+  const contact = { name, email, message };
+
+  // Read existing contacts data from file
+  let contacts = [];
+  try {
+    const contactsData = fs.readFileSync(contactsFilePath, 'utf8');
+    contacts = JSON.parse(contactsData);
+  } catch (err) {
+    console.error('Error reading contacts file:', err);
+  }
+
+  // Append new contact to existing contacts
+  contacts.push(contact);
+
+  // Write updated contacts data back to file
+  fs.writeFileSync(contactsFilePath, JSON.stringify(contacts, null, 2));
+
+  // Instead of sending a new page, send a response with a JavaScript snippet to trigger a popup
+  const popupScript = `
+    <script>
+      alert('Message sent successfully!');
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    </script>
+  `;
+  res.send(popupScript);
+});
 
 const PORT = 3000;
 app.listen(PORT, () => {

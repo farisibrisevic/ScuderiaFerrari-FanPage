@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="contact.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+<div class="logo">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="login.html">Prijava</a>
+        <a href="about.html">O nama</a>
+        <a href="contact.html">Kontakt</a>
+    </div>
+    <span onclick="openNav()"><img src="ferrari.svg" class="ferrari"></a></span>
+</div>
+    <ul class="lista1">
+        <li class="li1"><a href="index.html">Početna</a></li>
+        <li class="li1"><a href="leclerc.html">Vozači</a></li>
+        <li class="li1"><a href="bolidi.html">Bolidi</a></li>
+        <li class="li1"><a href="historija.html">Historija</a></li>
+    </ul>
+</header>
+<body>
+    <!-- contact.html -->
+<div class="naslov">
+    <h2>Kontaktirajte nas</h2>
+</div>
+<div class="container">
+    <form id="contactForm" action="/submit" method="POST">
+        <label for="name">Ime i prezime:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Poruka:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Pošalji!</button>
+    </form>
+</div>
+</body>
