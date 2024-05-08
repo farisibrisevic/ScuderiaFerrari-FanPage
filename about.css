@@ -175,3 +175,8 @@ header{
     box-shadow: 0 0 20px #333;
     transition: 0.5s;
   }
+
+  #fatih{
+    width: 95%;
+    height: 100%;
+  }
