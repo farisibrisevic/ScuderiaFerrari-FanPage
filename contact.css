@@ -137,8 +137,13 @@ header{
 }
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+iframe{
+    width: 400px;
+    height: 400px;
+    border: none;
 }
 label {
     display: block;
@@ -163,5 +168,13 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Formula1-Regular';
+}
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
     font-family: 'Formula1-Regular';
 }
