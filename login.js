@@ -31,7 +31,11 @@ app.post('/login', (req, res) => {
   const { username, password } = req.body;
   const user = users.find(u => u.username === username && u.password === password);
   if (user) {
-    res.redirect('/index.html');
+    if (username === 'admin' && password === 'admin') {
+      res.redirect('/admin.html');
+    } else {
+      res.redirect('/index.html');
+    }
   } else {
     console.log('Invalid username or password');
     res.sendFile(path.join(directoryPath, 'login.html'), { loginError: 'Invalid username or password.' });
@@ -81,6 +85,28 @@ app.post('/submit', (req, res) => {
     </script>
   `;
   res.send(popupScript);
+});
+
+app.get('/users', (req, res) => {
+  try {
+    const userData = fs.readFileSync(usersFilePath, 'utf8');
+    const existingUsers = JSON.parse(userData).users;
+    res.json(existingUsers);
+  } catch (err) {
+    console.error('Error reading users file:', err);
+    res.status(500).json({ error: 'Failed to read users file' });
+  }
+});
+
+app.get('/messages', (req, res) => {
+  try {
+    const contactsData = fs.readFileSync(contactsFilePath, 'utf8');
+    const messages = JSON.parse(contactsData);
+    res.json(messages);
+  } catch (err) {
+    console.error('Error reading contacts file:', err);
+    res.status(500).json({ error: 'Failed to read contacts file' });
+  }
 });
 
 const PORT = 3000;
