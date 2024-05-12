@@ -139,3 +139,44 @@ header{
     color: #6F0100;
     font-size: 20px;
 }
+#userSearchInput{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #6F0100;
+    margin-top: 10px;
+    padding-left: 5px;
+    font-family: 'Formula1-Regular';
+    margin: 2%;
+}
+#pretragaUsername{
+    font-family: 'Formula1-Regular';
+    color: #6F0100;
+    border: 1px solid #6F0100;
+    background-color: transparent;
+}
+#nameSearchInput{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #6F0100;
+    margin-top: 10px;
+    padding-left: 5px;
+    font-family: 'Formula1-Regular';
+}
+#lastNameSearchInput{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #6F0100;
+    margin-top: 10px;
+    padding-left: 5px;
+    font-family: 'Formula1-Regular';
+}
+#pretragaIme{
+    font-family: 'Formula1-Regular';
+    color: #6F0100;
+    border: 1px solid #6F0100;
+    background-color: transparent;
+    margin: 2%;
+}

@@ -25,23 +25,23 @@
     </header>
 <body>
 <div class="container">
-  <h1>Dobrodošao, Admin!</h1>
+  <h2>Dobrodošao, Admin!</h2>
   <h2>Pretraži korisnike</h2>
-  <input type="text" id="userSearchInput" placeholder="Search by username">
-  <button onclick="searchUsers()">Search</button>
+  <input type="text" id="userSearchInput" placeholder="Pretraži po username">
+  <button onclick="searchUsers()" id="pretragaUsername">Pretraži</button>
   <ul id="userList"></ul>
 
   <h2>Pretraži po imenu</h2>
-  <input type="text" id="nameSearchInput" placeholder="Enter first name">
-  <input type="text" id="lastNameSearchInput" placeholder="Enter last name">
-  <button onclick="searchName()">Search</button>
+  <input type="text" id="nameSearchInput" placeholder="Unesi ime">
+  <input type="text" id="lastNameSearchInput" placeholder="Unesi prezime">
+  <button onclick="searchName()" id="pretragaIme">Pretraži</button>
   <ul id="messageList"></ul>
 
   <script>
     function searchUsers() {
   const searchValue = document.getElementById('userSearchInput').value.trim().toLowerCase();
   const userList = document.getElementById('userList');
-  userList.innerHTML = ''; // Clear previous results
+  userList.innerHTML = '';
 
   fetch('/users')
     .then(response => response.json())
@@ -49,11 +49,11 @@
       const user = users.find(user => user.username.toLowerCase() === searchValue);
       if (user) {
         const listItem = document.createElement('li');
-        listItem.textContent = `Username: ${user.username}, Password: ${user.password}`;
+        listItem.textContent = `Username: ${user.username}, Šifra: ${user.password}`;
         userList.appendChild(listItem);
       } else {
         const listItem = document.createElement('li');
-        listItem.textContent = 'User not found.';
+        listItem.textContent = 'Korisnik nije pronađen.';
         userList.appendChild(listItem);
       }
     })
@@ -64,23 +64,31 @@ function searchName() {
   const firstName = document.getElementById('nameSearchInput').value.trim().toLowerCase();
   const lastName = document.getElementById('lastNameSearchInput').value.trim().toLowerCase();
   const messageList = document.getElementById('messageList');
-  messageList.innerHTML = ''; // Clear previous results
+  messageList.innerHTML = '';
 
   fetch('/messages')
     .then(response => response.json())
     .then(messages => {
-      messages.forEach(message => {
+      const filteredMessages = messages.filter(message => {
         const fullName = message.name.toLowerCase();
-        if (fullName.includes(firstName)) {
-          const listItem = document.createElement('li');
-          listItem.textContent = `From: ${message.name} ${message.lastName}, Email: ${message.email}, Message: ${message.message}`;
-          messageList.appendChild(listItem);
-        }
+        return fullName.includes(firstName);
       });
+      
+      if (filteredMessages.length > 0) {
+        filteredMessages.forEach(message => {
+          const listItem = document.createElement('li');
+          listItem.textContent = `Od: ${message.name} ${message.lastName}, Email: ${message.email}, Poruka: ${message.message}`;
+          messageList.appendChild(listItem);
+        });
+      } else {
+        const listItem = document.createElement('li');
+        listItem.textContent = 'Korisnik nije pronađen.';
+        messageList.appendChild(listItem);
+      }
     })
     .catch(error => console.error('Error fetching messages:', error));
 }
-  </script>
+</script>
 </div>
 </body>
 </html>
