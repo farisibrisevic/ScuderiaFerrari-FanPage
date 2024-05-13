@@ -12,5 +12,10 @@
       "username": "faris",
       "password": "admin"
     }
+    ,
+    {
+      "username": "admin",
+      "password": "admin"
+    }
   ]
 }
