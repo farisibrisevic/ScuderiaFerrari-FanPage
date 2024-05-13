@@ -30,19 +30,16 @@
   <input type="text" id="userSearchInput" placeholder="Pretraži po username">
   <button onclick="searchUsers()" id="pretragaUsername">Pretraži</button>
   <ul id="userList"></ul>
-
   <h2>Pretraži po imenu</h2>
   <input type="text" id="nameSearchInput" placeholder="Unesi ime">
   <input type="text" id="lastNameSearchInput" placeholder="Unesi prezime">
   <button onclick="searchName()" id="pretragaIme">Pretraži</button>
   <ul id="messageList"></ul>
-
   <script>
     function searchUsers() {
   const searchValue = document.getElementById('userSearchInput').value.trim().toLowerCase();
   const userList = document.getElementById('userList');
   userList.innerHTML = '';
-
   fetch('/users')
     .then(response => response.json())
     .then(users => {
@@ -59,13 +56,11 @@
     })
     .catch(error => console.error('Error fetching users:', error));
 }
-
 function searchName() {
   const firstName = document.getElementById('nameSearchInput').value.trim().toLowerCase();
   const lastName = document.getElementById('lastNameSearchInput').value.trim().toLowerCase();
   const messageList = document.getElementById('messageList');
   messageList.innerHTML = '';
-
   fetch('/messages')
     .then(response => response.json())
     .then(messages => {
@@ -73,7 +68,6 @@ function searchName() {
         const fullName = message.name.toLowerCase();
         return fullName.includes(firstName);
       });
-      
       if (filteredMessages.length > 0) {
         filteredMessages.forEach(message => {
           const listItem = document.createElement('li');

@@ -55,12 +55,11 @@ app.post('/register', (req, res) => {
   }
 });
 
-// Route to handle contact form submission
 app.post('/submit', (req, res) => {
   const { name, email, message } = req.body;
   const contact = { name, email, message };
 
-  // Read existing contacts data from file
+
   let contacts = [];
   try {
     const contactsData = fs.readFileSync(contactsFilePath, 'utf8');
@@ -69,13 +68,10 @@ app.post('/submit', (req, res) => {
     console.error('Error reading contacts file:', err);
   }
 
-  // Append new contact to existing contacts
   contacts.push(contact);
 
-  // Write updated contacts data back to file
   fs.writeFileSync(contactsFilePath, JSON.stringify(contacts, null, 2));
 
-  // Instead of sending a new page, send a response with a JavaScript snippet to trigger a popup
   const popupScript = `
     <script>
       alert('Message sent successfully!');
