@@ -812,3 +812,32 @@ th{
     color: #ffffff;
     padding-bottom: 10px;
 }
+.current-time{
+    background-color: #6F0100;
+    font-family: 'Formula1-Regular';
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#maranello-time{
+    font-family: 'Formula1-Regular';
+    color: #fff;
+    padding: 20px;
+}
+.f1-session{
+    background-color: #6F0100;
+    color: white;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'Formula1-Regular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#session-time{
+    font-family: 'Formula1-Regular';
+    color: #ffffff;
+    padding: 20px;
+}

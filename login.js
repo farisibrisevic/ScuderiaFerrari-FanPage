@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const directoryPath = __dirname;
 const usersFilePath = path.join(directoryPath, 'users.json');
-const contactsFilePath = path.join(directoryPath, 'contacts.json'); // New file for storing contact data
+const contactsFilePath = path.join(directoryPath, 'contacts.json');
 
 app.use(express.static(directoryPath));
 
@@ -23,7 +23,6 @@ try {
 }
 
 app.get('/', (req, res) => {
-  const { loginError, registerError } = req.query;
   res.sendFile(path.join(directoryPath, 'login.html'));
 });
 
@@ -58,7 +57,6 @@ app.post('/register', (req, res) => {
 app.post('/submit', (req, res) => {
   const { name, email, message } = req.body;
   const contact = { name, email, message };
-
 
   let contacts = [];
   try {
@@ -103,6 +101,11 @@ app.get('/messages', (req, res) => {
     console.error('Error reading contacts file:', err);
     res.status(500).json({ error: 'Failed to read contacts file' });
   }
+});
+
+// Serve index.html with JavaScript
+app.get('/index.html', (req, res) => {
+  res.sendFile(path.join(directoryPath, 'index.html'));
 });
 
 const PORT = 3000;
