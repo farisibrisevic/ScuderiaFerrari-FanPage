@@ -823,8 +823,8 @@ th{
 }
 #maranello-time{
     font-family: 'Formula1-Regular';
-    color: #fff;
-    /*padding: 20px;*/
+    color: #fbce11;
+    padding-left: 10px;
 }
 .f1-session{
     background-color: #6F0100;
@@ -839,5 +839,6 @@ th{
 }
 #session-time{
     font-family: 'Formula1-Regular';
-    color: #ffffff;
+    color: #fbce11;
+    padding-left: 10px;
 }
